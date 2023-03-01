@@ -1,16 +1,20 @@
 import { useState } from "react";
 import './App.css';
-import User from "./components/GenerateUser";
-import { Button } from "react-bootstrap";
+import { Nav, Button } from "react-bootstrap";
 import Welcome from "./components/Welcome";
+import Chatroom from "./components/Chatroom";
 
 function App() {
-  const [user, setUser] = useState<string>();
+  const [user, setUser] = useState<string | null>();
 
   function logIn() {
     const selectedUser = document.querySelector(".username");
     setUser(String(selectedUser?.childNodes[0].nodeValue));
   }
+  function logOut() {
+    setUser(null);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -28,7 +32,11 @@ function App() {
                 </>
             ) : (
                 <>
-                    <p>{user}</p>
+                  <div className="Chat-header d-flex justify-content-between">
+                    <h1>Chatroom</h1>
+                    <Button variant="dark" onClick={logOut}>Logout</Button>
+                  </div>
+                  <Chatroom user={user}/>
                 </>
             )}
         
