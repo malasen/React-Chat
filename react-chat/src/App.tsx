@@ -39,7 +39,6 @@ function App() {
                   <Chatroom user={user}/>
                 </>
             )}
-        
       </header>
     </div>
   );

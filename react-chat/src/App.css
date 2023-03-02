@@ -35,6 +35,8 @@
   top: 0; left: 0; right: 0;
 }
 
+
+
 #form { 
   background: rgba(0, 0, 0, 0.15); 
   padding: 0.25rem; 
@@ -60,11 +62,17 @@
     
 #messages { 
   list-style-type: none; margin: 0; padding: 0; 
+  text-align: left;
+  width: 95%;
 }
 #messages > li { 
   padding: 0.5rem 1rem; 
 }
-#messages > li:nth-child(odd) { 
-  background: #efefef; 
+
+.msg-username {
+  font-weight: bold;
+}
+.msg-text{
+  margin-left: 50px;
 }
 
