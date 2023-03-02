@@ -1,4 +1,4 @@
-import User from "./GenerateUser";
+import GetUser from "./GetUser";
 
 function Welcome() {
   return (
@@ -7,10 +7,10 @@ function Welcome() {
           Velkommen til Chatten
         </p>
         <div className="mt-0">
-          <User />
+          <GetUser />
         </div>
     </div>
   )
 }
 
-export default Welcome
+export default Welcome;

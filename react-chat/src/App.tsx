@@ -1,6 +1,6 @@
 import { useState } from "react";
 import './App.css';
-import { Nav, Button } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import Welcome from "./components/Welcome";
 import Chatroom from "./components/Chatroom";
 
