@@ -6,21 +6,13 @@ import reportWebVitals from './reportWebVitals';
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { getFirestore } from 'firebase/firestore';
+import { FIREBASE_CONFIG } from './constants/firebase';
 
-// Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyCYJP1jVKI1o1khFw3VlnPOu0tKMXj1anQ",
-  authDomain: "reactapp-8dcfa.firebaseapp.com",
-  projectId: "reactapp-8dcfa",
-  storageBucket: "reactapp-8dcfa.appspot.com",
-  messagingSenderId: "391476356986",
-  appId: "1:391476356986:web:28968ca21be521009518c3"
-};
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+const app = initializeApp(FIREBASE_CONFIG);
+const db = getFirestore(app);
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

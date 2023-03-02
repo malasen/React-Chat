@@ -40,7 +40,7 @@ function User() {
         const randomFirst: string = names[Math.floor(Math.random() * names.length)];
         const firstName: string = formatName(randomFirst);
     
-        let randomLast: string = names[Math.floor(Math.random() * names.length)] + "son";
+        let randomLast: string = names[Math.floor(Math.random() * names.length)] + "sen";
         if (randomFirst.startsWith("1")){
            randomLast = names[Math.floor(Math.random() * names.length)] + "dottir";
         }
