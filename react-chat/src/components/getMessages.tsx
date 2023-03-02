@@ -32,7 +32,7 @@ function GetMessages(props: {user: string}) {
                         return(
                             <li key={index} className="msg-container d-flex">
                                 {props.user === value.user ? (
-                                    <div className="msg-username text-primary">{value.user} </div> 
+                                    <div className="msg-username text-primary">{value.user}: </div> 
                                 ):(
                                     <div className="msg-username text-secondary">{value.user}: </div>
                                 )}

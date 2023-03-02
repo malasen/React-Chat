@@ -4,7 +4,7 @@ function Welcome() {
   return (
     <div>
         <p>
-          Velkommen til Chatten
+          Velkommen til chatten
         </p>
         <div className="mt-0">
           <GetUser />
